@@ -1,0 +1,7 @@
+arquivo = open("palavras.txt", "w")
+arquivo = open("palavras.txt", "a")
+arquivo.write("Ouro\n")
+arquivo.write("Prata\n")
+arquivo.write("Manganês\n")
+arquivo.close()
+print(arquivo)

@@ -3,7 +3,17 @@ def jogar():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    palavra_secreta = "banana".upper()
+    arquivo = open("palavras.txt", "r")
+
+    for linha in arquivo:
+        linha = linha.strip()
+        palavra.append(linha)
+
+    arquivo.close()
+
+    print(palavra)
+
+    palavra_secreta = palavra
     letras_acertadas = ["-" for letra in palavra_secreta]
 
     enforcou = False
